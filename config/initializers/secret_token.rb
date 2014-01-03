@@ -9,4 +9,4 @@
 
 # Make sure your secret_key_base is kept private
 # if you're sharing your code publicly.
-Pom::Application.config.secret_key_base = '88f15825a40f8e163184c808635b96bc1babbe60f9699ebb4974bdad7881f169977b23d515a01c53ef87c30eb874a9e3c97fb7700470c0e4cf281009b870560d'
+Pom::Application.config.secret_key_base = '928c5a8c8572f021bcf31e82dde66bbc5b8f13b62bd162ae123862bf1a4d5e302837663f85a9e5c4c052e7ce95fc8c9ce5136573641c43df55eaee5ab5fe1f00'

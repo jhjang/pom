@@ -1,1042 +1,119 @@
 
 
-Started GET "/" for 127.0.0.1 at 2014-01-02 23:32:00 +0900
+Started GET "/auth/facebook" for 127.0.0.1 at 2014-01-04 01:59:42 +0900
+
+ActionController::RoutingError (No route matches [GET] "/auth/facebook"):
+  actionpack (4.0.2) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.2) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.2) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.2) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.2) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.2) lib/rails/engine.rb:511:in `call'
+  railties (4.0.2) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/hyunjinjang/.rvm/rubies/ruby-2.0.0-p353/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /Users/hyunjinjang/.rvm/rubies/ruby-2.0.0-p353/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /Users/hyunjinjang/.rvm/rubies/ruby-2.0.0-p353/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Users/hyunjinjang/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.9ms)
+  Rendered /Users/hyunjinjang/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/routes/_table.html.erb (8.3ms)
+  Rendered /Users/hyunjinjang/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (20.9ms)
+
+
+Started GET "/auth/facebook" for 127.0.0.1 at 2014-01-04 02:04:30 +0900
+
+
+Started GET "/auth/facebook" for 127.0.0.1 at 2014-01-04 02:06:21 +0900
+
+
+Started GET "/" for 127.0.0.1 at 2014-01-04 02:07:21 +0900
 Processing by Rails::WelcomeController#index as HTML
-  Rendered /Users/hyunjinjang/.rvm/gems/ruby-2.0.0-p353/gems/railties-4.0.2/lib/rails/templates/rails/welcome/index.html.erb (1.3ms)
-Completed 200 OK in 24ms (Views: 6.3ms | ActiveRecord: 0.0ms)
+  Rendered /Users/hyunjinjang/.rvm/gems/ruby-2.0.0-p353/gems/railties-4.0.2/lib/rails/templates/rails/welcome/index.html.erb (2.6ms)
+Completed 200 OK in 24ms (Views: 9.1ms | ActiveRecord: 0.0ms)
 
 
-Started GET "/" for 127.0.0.1 at 2014-01-02 23:32:36 +0900
+Started GET "/auth/facebook" for 127.0.0.1 at 2014-01-04 02:07:25 +0900
+
+
+Started GET "/auth/facebook" for 127.0.0.1 at 2014-01-04 02:07:59 +0900
+
+
+Started GET "/" for 127.0.0.1 at 2014-01-04 02:11:24 +0900
 Processing by WelcomeController#index as HTML
-  Rendered welcome/index.html.erb within layouts/application (0.3ms)
-Completed 200 OK in 603ms (Views: 602.2ms | ActiveRecord: 0.0ms)
+  Rendered welcome/index.html.erb within layouts/application (1.0ms)
+Completed 500 Internal Server Error in 68ms
+
+ActionView::Template::Error (couldn't find file 'jquery'
+  (in /Users/hyunjinjang/Documents/projects/rails/pom/app/assets/javascripts/application.js:13)):
+    3: <head>
+    4:   <title>Pom</title>
+    5:   <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
+    6:   <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
+    7:   <%= csrf_meta_tags %>
+    8: </head>
+    9: <body>
+  app/views/layouts/application.html.erb:6:in `_app_views_layouts_application_html_erb__4558513201147295582_2173672780'
 
 
-Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-01-02 23:32:37 +0900
+  Rendered /Users/hyunjinjang/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+  Rendered /Users/hyunjinjang/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.9ms)
+  Rendered /Users/hyunjinjang/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (10.7ms)
 
 
-Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2014-01-02 23:32:37 +0900
-
-
-Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-01-02 23:32:37 +0900
-
-
-Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-01-02 23:32:37 +0900
-
-
-Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-01-02 23:32:37 +0900
-
-
-Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2014-01-02 23:32:37 +0900
-
-
-Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-01-02 23:32:37 +0900
-
-
-Started GET "/" for 127.0.0.1 at 2014-01-02 23:34:48 +0900
+Started GET "/" for 127.0.0.1 at 2014-01-04 02:11:38 +0900
 Processing by WelcomeController#index as HTML
-  Rendered welcome/index.html.erb within layouts/application (0.1ms)
-Completed 200 OK in 3ms (Views: 2.0ms | ActiveRecord: 0.0ms)
+  Rendered welcome/index.html.erb within layouts/application (1.0ms)
+Completed 500 Internal Server Error in 37ms
+
+ActionView::Template::Error (couldn't find file 'jquery'
+  (in /Users/hyunjinjang/Documents/projects/rails/pom/app/assets/javascripts/application.js:13)):
+    3: <head>
+    4:   <title>Pom</title>
+    5:   <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
+    6:   <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
+    7:   <%= csrf_meta_tags %>
+    8: </head>
+    9: <body>
+  app/views/layouts/application.html.erb:6:in `_app_views_layouts_application_html_erb__3329229012293561582_2173721400'
 
 
-Started GET "/" for 127.0.0.1 at 2014-01-02 23:34:49 +0900
-Processing by WelcomeController#index as HTML
-  Rendered welcome/index.html.erb within layouts/application (0.1ms)
-Completed 200 OK in 3ms (Views: 1.8ms | ActiveRecord: 0.0ms)
-
-
-Started GET "/" for 127.0.0.1 at 2014-01-02 23:38:04 +0900
-Processing by WelcomeController#index as HTML
-  Rendered welcome/index.html.erb within layouts/application (0.0ms)
-Completed 200 OK in 3ms (Views: 2.6ms | ActiveRecord: 0.0ms)
-
-
-Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-01-02 23:38:04 +0900
-
-
-Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2014-01-02 23:38:04 +0900
-
-
-Started GET "/" for 127.0.0.1 at 2014-01-02 23:43:49 +0900
-Processing by WelcomeController#index as HTML
-  Rendered welcome/index.html.erb within layouts/application (1.1ms)
-Completed 200 OK in 48ms (Views: 32.9ms | ActiveRecord: 0.0ms)
-
-
-Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-01-02 23:43:49 +0900
-
-
-Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2014-01-02 23:43:49 +0900
-
-
-Started GET "/" for 127.0.0.1 at 2014-01-02 23:45:23 +0900
-Processing by WelcomeController#index as HTML
-  Rendered welcome/index.html.erb within layouts/application (0.1ms)
-Completed 200 OK in 3ms (Views: 3.0ms | ActiveRecord: 0.0ms)
-
-
-Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-01-02 23:45:24 +0900
-
-
-Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2014-01-02 23:45:24 +0900
-
-
-Started GET "/" for 127.0.0.1 at 2014-01-02 23:45:59 +0900
-Processing by WelcomeController#index as HTML
-  Rendered welcome/index.html.erb within layouts/application (0.1ms)
-Completed 200 OK in 9ms (Views: 7.7ms | ActiveRecord: 0.0ms)
-
-
-Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2014-01-02 23:46:00 +0900
-
-
-Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-01-02 23:46:00 +0900
-
-
-Started GET "/" for 127.0.0.1 at 2014-01-02 23:46:51 +0900
-Processing by WelcomeController#index as HTML
-  Rendered welcome/index.html.erb within layouts/application (0.0ms)
-Completed 200 OK in 3ms (Views: 2.7ms | ActiveRecord: 0.0ms)
-
-
-Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-01-02 23:46:51 +0900
-
-
-Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2014-01-02 23:46:51 +0900
-
-
-Started GET "/" for 127.0.0.1 at 2014-01-02 23:46:52 +0900
-Processing by WelcomeController#index as HTML
-  Rendered welcome/index.html.erb within layouts/application (0.0ms)
-Completed 200 OK in 3ms (Views: 2.3ms | ActiveRecord: 0.0ms)
-
-
-Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-01-02 23:46:52 +0900
-
-
-Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2014-01-02 23:46:52 +0900
-
-
-Started GET "/" for 127.0.0.1 at 2014-01-02 23:48:57 +0900
-Processing by WelcomeController#index as HTML
-  Rendered welcome/index.html.erb within layouts/application (0.1ms)
-Completed 200 OK in 46ms (Views: 45.8ms | ActiveRecord: 0.0ms)
-
-
-Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-01-02 23:48:57 +0900
-
-
-Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2014-01-02 23:48:57 +0900
-
-
-Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-01-02 23:48:57 +0900
-
-
-Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-01-02 23:48:57 +0900
-
-
-Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-01-02 23:48:57 +0900
-
-
-Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-01-02 23:48:57 +0900
-
-
-Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2014-01-02 23:48:57 +0900
-
-
-Started GET "/" for 127.0.0.1 at 2014-01-02 23:48:58 +0900
-Processing by WelcomeController#index as HTML
-  Rendered welcome/index.html.erb within layouts/application (0.0ms)
-Completed 200 OK in 4ms (Views: 3.4ms | ActiveRecord: 0.0ms)
-
-
-Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-01-02 23:48:58 +0900
-
-
-Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2014-01-02 23:48:58 +0900
-
-
-Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-01-02 23:48:58 +0900
-
-
-Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-01-02 23:48:58 +0900
-
-
-Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-01-02 23:48:58 +0900
-
-
-Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2014-01-02 23:48:58 +0900
-
-
-Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-01-02 23:48:58 +0900
-
-
-Started GET "/" for 127.0.0.1 at 2014-01-02 23:52:51 +0900
-Processing by WelcomeController#index as HTML
-  Rendered welcome/index.html.erb within layouts/application (0.1ms)
-Completed 200 OK in 4ms (Views: 3.4ms | ActiveRecord: 0.0ms)
-
-
-Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-01-02 23:52:51 +0900
-
-
-Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2014-01-02 23:52:51 +0900
-
-
-Started GET "/" for 127.0.0.1 at 2014-01-02 23:52:51 +0900
-Processing by WelcomeController#index as HTML
-  Rendered welcome/index.html.erb within layouts/application (0.1ms)
-Completed 200 OK in 3ms (Views: 2.4ms | ActiveRecord: 0.0ms)
-
-
-Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-01-02 23:52:52 +0900
-
-
-Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2014-01-02 23:52:52 +0900
-
-
-Started GET "/" for 127.0.0.1 at 2014-01-02 23:52:52 +0900
-Processing by WelcomeController#index as HTML
-  Rendered welcome/index.html.erb within layouts/application (0.1ms)
-Completed 200 OK in 3ms (Views: 2.8ms | ActiveRecord: 0.0ms)
-
-
-Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-01-02 23:52:52 +0900
-
-
-Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2014-01-02 23:52:52 +0900
-
-
-Started GET "/" for 127.0.0.1 at 2014-01-02 23:52:52 +0900
-Processing by WelcomeController#index as HTML
-  Rendered welcome/index.html.erb within layouts/application (0.0ms)
-Completed 200 OK in 3ms (Views: 2.2ms | ActiveRecord: 0.0ms)
-
-
-Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-01-02 23:52:52 +0900
-
-
-Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2014-01-02 23:52:52 +0900
-
-
-Started GET "/" for 127.0.0.1 at 2014-01-02 23:52:53 +0900
-Processing by WelcomeController#index as HTML
-  Rendered welcome/index.html.erb within layouts/application (0.0ms)
-Completed 200 OK in 3ms (Views: 2.2ms | ActiveRecord: 0.0ms)
-
-
-Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-01-02 23:52:53 +0900
-
-
-Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2014-01-02 23:52:53 +0900
-
-
-Started GET "/" for 127.0.0.1 at 2014-01-02 23:52:53 +0900
-Processing by WelcomeController#index as HTML
-  Rendered welcome/index.html.erb within layouts/application (0.0ms)
-Completed 200 OK in 3ms (Views: 2.4ms | ActiveRecord: 0.0ms)
-
-
-Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-01-02 23:52:53 +0900
-
-
-Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2014-01-02 23:52:53 +0900
-
-
-Started GET "/" for 127.0.0.1 at 2014-01-02 23:54:24 +0900
-Processing by WelcomeController#index as HTML
-  Rendered welcome/index.html.erb within layouts/application (0.0ms)
-Completed 200 OK in 3ms (Views: 2.3ms | ActiveRecord: 0.0ms)
-
-
-Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-01-02 23:54:24 +0900
-
-
-Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2014-01-02 23:54:24 +0900
-
-
-Started GET "/" for 127.0.0.1 at 2014-01-02 23:58:32 +0900
-
-SyntaxError (/Users/hyunjinjang/Documents/projects/rails/pom/app/controllers/welcome_controller.rb:2: syntax error, unexpected ':', expecting keyword_end
-	before_filter :login_required, :only :index
-	                                      ^):
-  activesupport (4.0.2) lib/active_support/dependencies.rb:424:in `load'
-  activesupport (4.0.2) lib/active_support/dependencies.rb:424:in `block in load_file'
-  activesupport (4.0.2) lib/active_support/dependencies.rb:616:in `new_constants_in'
-  activesupport (4.0.2) lib/active_support/dependencies.rb:423:in `load_file'
-  activesupport (4.0.2) lib/active_support/dependencies.rb:324:in `require_or_load'
-  activesupport (4.0.2) lib/active_support/dependencies.rb:463:in `load_missing_constant'
-  activesupport (4.0.2) lib/active_support/dependencies.rb:184:in `const_missing'
-  activesupport (4.0.2) lib/active_support/inflector/methods.rb:226:in `const_get'
-  activesupport (4.0.2) lib/active_support/inflector/methods.rb:226:in `block in constantize'
-  activesupport (4.0.2) lib/active_support/inflector/methods.rb:224:in `each'
-  activesupport (4.0.2) lib/active_support/inflector/methods.rb:224:in `inject'
-  activesupport (4.0.2) lib/active_support/inflector/methods.rb:224:in `constantize'
-  activesupport (4.0.2) lib/active_support/dependencies.rb:535:in `get'
-  activesupport (4.0.2) lib/active_support/dependencies.rb:566:in `constantize'
-  actionpack (4.0.2) lib/action_dispatch/routing/route_set.rb:76:in `controller_reference'
-  actionpack (4.0.2) lib/action_dispatch/routing/route_set.rb:66:in `controller'
-  actionpack (4.0.2) lib/action_dispatch/routing/route_set.rb:44:in `call'
-  actionpack (4.0.2) lib/action_dispatch/journey/router.rb:71:in `block in call'
-  actionpack (4.0.2) lib/action_dispatch/journey/router.rb:59:in `each'
-  actionpack (4.0.2) lib/action_dispatch/journey/router.rb:59:in `call'
-  actionpack (4.0.2) lib/action_dispatch/routing/route_set.rb:680:in `call'
-  rack (1.5.2) lib/rack/etag.rb:23:in `call'
-  rack (1.5.2) lib/rack/conditionalget.rb:25:in `call'
-  rack (1.5.2) lib/rack/head.rb:11:in `call'
-  actionpack (4.0.2) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
-  actionpack (4.0.2) lib/action_dispatch/middleware/flash.rb:241:in `call'
-  rack (1.5.2) lib/rack/session/abstract/id.rb:225:in `context'
-  rack (1.5.2) lib/rack/session/abstract/id.rb:220:in `call'
-  actionpack (4.0.2) lib/action_dispatch/middleware/cookies.rb:486:in `call'
-  activerecord (4.0.2) lib/active_record/query_cache.rb:36:in `call'
-  activerecord (4.0.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:626:in `call'
-  activerecord (4.0.2) lib/active_record/migration.rb:369:in `call'
-  actionpack (4.0.2) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
-  activesupport (4.0.2) lib/active_support/callbacks.rb:373:in `_run__710314515314212977__call__callbacks'
-  activesupport (4.0.2) lib/active_support/callbacks.rb:80:in `run_callbacks'
-  actionpack (4.0.2) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
-  actionpack (4.0.2) lib/action_dispatch/middleware/reloader.rb:64:in `call'
-  actionpack (4.0.2) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
-  actionpack (4.0.2) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
-  actionpack (4.0.2) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
-  railties (4.0.2) lib/rails/rack/logger.rb:38:in `call_app'
-  railties (4.0.2) lib/rails/rack/logger.rb:20:in `block in call'
-  activesupport (4.0.2) lib/active_support/tagged_logging.rb:67:in `block in tagged'
-  activesupport (4.0.2) lib/active_support/tagged_logging.rb:25:in `tagged'
-  activesupport (4.0.2) lib/active_support/tagged_logging.rb:67:in `tagged'
-  railties (4.0.2) lib/rails/rack/logger.rb:20:in `call'
-  actionpack (4.0.2) lib/action_dispatch/middleware/request_id.rb:21:in `call'
-  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
-  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
-  activesupport (4.0.2) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
-  rack (1.5.2) lib/rack/lock.rb:17:in `call'
-  actionpack (4.0.2) lib/action_dispatch/middleware/static.rb:64:in `call'
-  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
-  railties (4.0.2) lib/rails/engine.rb:511:in `call'
-  railties (4.0.2) lib/rails/application.rb:97:in `call'
-  rack (1.5.2) lib/rack/lock.rb:17:in `call'
-  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
-  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
-  /Users/hyunjinjang/.rvm/rubies/ruby-2.0.0-p353/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
-  /Users/hyunjinjang/.rvm/rubies/ruby-2.0.0-p353/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
-  /Users/hyunjinjang/.rvm/rubies/ruby-2.0.0-p353/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
-
-
-  Rendered /Users/hyunjinjang/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.9ms)
-  Rendered /Users/hyunjinjang/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.6ms)
-  Rendered /Users/hyunjinjang/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.2ms)
-  Rendered /Users/hyunjinjang/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (22.2ms)
-
-
-Started GET "/" for 127.0.0.1 at 2014-01-02 23:58:41 +0900
-
-SyntaxError (/Users/hyunjinjang/Documents/projects/rails/pom/app/controllers/welcome_controller.rb:2: syntax error, unexpected ':', expecting keyword_end
-	before_filter :login_required, :only :index
-	                                      ^):
-  activesupport (4.0.2) lib/active_support/dependencies.rb:424:in `load'
-  activesupport (4.0.2) lib/active_support/dependencies.rb:424:in `block in load_file'
-  activesupport (4.0.2) lib/active_support/dependencies.rb:616:in `new_constants_in'
-  activesupport (4.0.2) lib/active_support/dependencies.rb:423:in `load_file'
-  activesupport (4.0.2) lib/active_support/dependencies.rb:324:in `require_or_load'
-  activesupport (4.0.2) lib/active_support/dependencies.rb:463:in `load_missing_constant'
-  activesupport (4.0.2) lib/active_support/dependencies.rb:184:in `const_missing'
-  activesupport (4.0.2) lib/active_support/inflector/methods.rb:226:in `const_get'
-  activesupport (4.0.2) lib/active_support/inflector/methods.rb:226:in `block in constantize'
-  activesupport (4.0.2) lib/active_support/inflector/methods.rb:224:in `each'
-  activesupport (4.0.2) lib/active_support/inflector/methods.rb:224:in `inject'
-  activesupport (4.0.2) lib/active_support/inflector/methods.rb:224:in `constantize'
-  activesupport (4.0.2) lib/active_support/dependencies.rb:535:in `get'
-  activesupport (4.0.2) lib/active_support/dependencies.rb:566:in `constantize'
-  actionpack (4.0.2) lib/action_dispatch/routing/route_set.rb:76:in `controller_reference'
-  actionpack (4.0.2) lib/action_dispatch/routing/route_set.rb:66:in `controller'
-  actionpack (4.0.2) lib/action_dispatch/routing/route_set.rb:44:in `call'
-  actionpack (4.0.2) lib/action_dispatch/journey/router.rb:71:in `block in call'
-  actionpack (4.0.2) lib/action_dispatch/journey/router.rb:59:in `each'
-  actionpack (4.0.2) lib/action_dispatch/journey/router.rb:59:in `call'
-  actionpack (4.0.2) lib/action_dispatch/routing/route_set.rb:680:in `call'
-  rack (1.5.2) lib/rack/etag.rb:23:in `call'
-  rack (1.5.2) lib/rack/conditionalget.rb:25:in `call'
-  rack (1.5.2) lib/rack/head.rb:11:in `call'
-  actionpack (4.0.2) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
-  actionpack (4.0.2) lib/action_dispatch/middleware/flash.rb:241:in `call'
-  rack (1.5.2) lib/rack/session/abstract/id.rb:225:in `context'
-  rack (1.5.2) lib/rack/session/abstract/id.rb:220:in `call'
-  actionpack (4.0.2) lib/action_dispatch/middleware/cookies.rb:486:in `call'
-  activerecord (4.0.2) lib/active_record/query_cache.rb:36:in `call'
-  activerecord (4.0.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:626:in `call'
-  activerecord (4.0.2) lib/active_record/migration.rb:369:in `call'
-  actionpack (4.0.2) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
-  activesupport (4.0.2) lib/active_support/callbacks.rb:373:in `_run__710314515314212977__call__callbacks'
-  activesupport (4.0.2) lib/active_support/callbacks.rb:80:in `run_callbacks'
-  actionpack (4.0.2) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
-  actionpack (4.0.2) lib/action_dispatch/middleware/reloader.rb:64:in `call'
-  actionpack (4.0.2) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
-  actionpack (4.0.2) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
-  actionpack (4.0.2) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
-  railties (4.0.2) lib/rails/rack/logger.rb:38:in `call_app'
-  railties (4.0.2) lib/rails/rack/logger.rb:20:in `block in call'
-  activesupport (4.0.2) lib/active_support/tagged_logging.rb:67:in `block in tagged'
-  activesupport (4.0.2) lib/active_support/tagged_logging.rb:25:in `tagged'
-  activesupport (4.0.2) lib/active_support/tagged_logging.rb:67:in `tagged'
-  railties (4.0.2) lib/rails/rack/logger.rb:20:in `call'
-  actionpack (4.0.2) lib/action_dispatch/middleware/request_id.rb:21:in `call'
-  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
-  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
-  activesupport (4.0.2) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
-  rack (1.5.2) lib/rack/lock.rb:17:in `call'
-  actionpack (4.0.2) lib/action_dispatch/middleware/static.rb:64:in `call'
-  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
-  railties (4.0.2) lib/rails/engine.rb:511:in `call'
-  railties (4.0.2) lib/rails/application.rb:97:in `call'
-  rack (1.5.2) lib/rack/lock.rb:17:in `call'
-  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
-  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
-  /Users/hyunjinjang/.rvm/rubies/ruby-2.0.0-p353/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
-  /Users/hyunjinjang/.rvm/rubies/ruby-2.0.0-p353/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
-  /Users/hyunjinjang/.rvm/rubies/ruby-2.0.0-p353/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
-
-
-  Rendered /Users/hyunjinjang/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.4ms)
   Rendered /Users/hyunjinjang/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.9ms)
-  Rendered /Users/hyunjinjang/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.0ms)
-  Rendered /Users/hyunjinjang/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (13.3ms)
+  Rendered /Users/hyunjinjang/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.7ms)
+  Rendered /Users/hyunjinjang/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (8.6ms)
 
 
-Started GET "/" for 127.0.0.1 at 2014-01-02 23:58:42 +0900
-
-SyntaxError (/Users/hyunjinjang/Documents/projects/rails/pom/app/controllers/welcome_controller.rb:2: syntax error, unexpected ':', expecting keyword_end
-	before_filter :login_required, :only :index
-	                                      ^):
-  activesupport (4.0.2) lib/active_support/dependencies.rb:424:in `load'
-  activesupport (4.0.2) lib/active_support/dependencies.rb:424:in `block in load_file'
-  activesupport (4.0.2) lib/active_support/dependencies.rb:616:in `new_constants_in'
-  activesupport (4.0.2) lib/active_support/dependencies.rb:423:in `load_file'
-  activesupport (4.0.2) lib/active_support/dependencies.rb:324:in `require_or_load'
-  activesupport (4.0.2) lib/active_support/dependencies.rb:463:in `load_missing_constant'
-  activesupport (4.0.2) lib/active_support/dependencies.rb:184:in `const_missing'
-  activesupport (4.0.2) lib/active_support/inflector/methods.rb:226:in `const_get'
-  activesupport (4.0.2) lib/active_support/inflector/methods.rb:226:in `block in constantize'
-  activesupport (4.0.2) lib/active_support/inflector/methods.rb:224:in `each'
-  activesupport (4.0.2) lib/active_support/inflector/methods.rb:224:in `inject'
-  activesupport (4.0.2) lib/active_support/inflector/methods.rb:224:in `constantize'
-  activesupport (4.0.2) lib/active_support/dependencies.rb:535:in `get'
-  activesupport (4.0.2) lib/active_support/dependencies.rb:566:in `constantize'
-  actionpack (4.0.2) lib/action_dispatch/routing/route_set.rb:76:in `controller_reference'
-  actionpack (4.0.2) lib/action_dispatch/routing/route_set.rb:66:in `controller'
-  actionpack (4.0.2) lib/action_dispatch/routing/route_set.rb:44:in `call'
-  actionpack (4.0.2) lib/action_dispatch/journey/router.rb:71:in `block in call'
-  actionpack (4.0.2) lib/action_dispatch/journey/router.rb:59:in `each'
-  actionpack (4.0.2) lib/action_dispatch/journey/router.rb:59:in `call'
-  actionpack (4.0.2) lib/action_dispatch/routing/route_set.rb:680:in `call'
-  rack (1.5.2) lib/rack/etag.rb:23:in `call'
-  rack (1.5.2) lib/rack/conditionalget.rb:25:in `call'
-  rack (1.5.2) lib/rack/head.rb:11:in `call'
-  actionpack (4.0.2) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
-  actionpack (4.0.2) lib/action_dispatch/middleware/flash.rb:241:in `call'
-  rack (1.5.2) lib/rack/session/abstract/id.rb:225:in `context'
-  rack (1.5.2) lib/rack/session/abstract/id.rb:220:in `call'
-  actionpack (4.0.2) lib/action_dispatch/middleware/cookies.rb:486:in `call'
-  activerecord (4.0.2) lib/active_record/query_cache.rb:36:in `call'
-  activerecord (4.0.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:626:in `call'
-  activerecord (4.0.2) lib/active_record/migration.rb:369:in `call'
-  actionpack (4.0.2) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
-  activesupport (4.0.2) lib/active_support/callbacks.rb:373:in `_run__710314515314212977__call__callbacks'
-  activesupport (4.0.2) lib/active_support/callbacks.rb:80:in `run_callbacks'
-  actionpack (4.0.2) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
-  actionpack (4.0.2) lib/action_dispatch/middleware/reloader.rb:64:in `call'
-  actionpack (4.0.2) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
-  actionpack (4.0.2) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
-  actionpack (4.0.2) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
-  railties (4.0.2) lib/rails/rack/logger.rb:38:in `call_app'
-  railties (4.0.2) lib/rails/rack/logger.rb:20:in `block in call'
-  activesupport (4.0.2) lib/active_support/tagged_logging.rb:67:in `block in tagged'
-  activesupport (4.0.2) lib/active_support/tagged_logging.rb:25:in `tagged'
-  activesupport (4.0.2) lib/active_support/tagged_logging.rb:67:in `tagged'
-  railties (4.0.2) lib/rails/rack/logger.rb:20:in `call'
-  actionpack (4.0.2) lib/action_dispatch/middleware/request_id.rb:21:in `call'
-  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
-  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
-  activesupport (4.0.2) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
-  rack (1.5.2) lib/rack/lock.rb:17:in `call'
-  actionpack (4.0.2) lib/action_dispatch/middleware/static.rb:64:in `call'
-  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
-  railties (4.0.2) lib/rails/engine.rb:511:in `call'
-  railties (4.0.2) lib/rails/application.rb:97:in `call'
-  rack (1.5.2) lib/rack/lock.rb:17:in `call'
-  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
-  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
-  /Users/hyunjinjang/.rvm/rubies/ruby-2.0.0-p353/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
-  /Users/hyunjinjang/.rvm/rubies/ruby-2.0.0-p353/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
-  /Users/hyunjinjang/.rvm/rubies/ruby-2.0.0-p353/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
-
-
-  Rendered /Users/hyunjinjang/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.6ms)
-  Rendered /Users/hyunjinjang/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.2ms)
-  Rendered /Users/hyunjinjang/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.0ms)
-  Rendered /Users/hyunjinjang/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (14.1ms)
-
-
-Started GET "/" for 127.0.0.1 at 2014-01-02 23:58:59 +0900
-
-SyntaxError (/Users/hyunjinjang/Documents/projects/rails/pom/app/controllers/welcome_controller.rb:2: syntax error, unexpected ':', expecting keyword_end
-	before_filter :login_required, :only: :index
-	                                     ^):
-  activesupport (4.0.2) lib/active_support/dependencies.rb:424:in `load'
-  activesupport (4.0.2) lib/active_support/dependencies.rb:424:in `block in load_file'
-  activesupport (4.0.2) lib/active_support/dependencies.rb:616:in `new_constants_in'
-  activesupport (4.0.2) lib/active_support/dependencies.rb:423:in `load_file'
-  activesupport (4.0.2) lib/active_support/dependencies.rb:324:in `require_or_load'
-  activesupport (4.0.2) lib/active_support/dependencies.rb:463:in `load_missing_constant'
-  activesupport (4.0.2) lib/active_support/dependencies.rb:184:in `const_missing'
-  activesupport (4.0.2) lib/active_support/inflector/methods.rb:226:in `const_get'
-  activesupport (4.0.2) lib/active_support/inflector/methods.rb:226:in `block in constantize'
-  activesupport (4.0.2) lib/active_support/inflector/methods.rb:224:in `each'
-  activesupport (4.0.2) lib/active_support/inflector/methods.rb:224:in `inject'
-  activesupport (4.0.2) lib/active_support/inflector/methods.rb:224:in `constantize'
-  activesupport (4.0.2) lib/active_support/dependencies.rb:535:in `get'
-  activesupport (4.0.2) lib/active_support/dependencies.rb:566:in `constantize'
-  actionpack (4.0.2) lib/action_dispatch/routing/route_set.rb:76:in `controller_reference'
-  actionpack (4.0.2) lib/action_dispatch/routing/route_set.rb:66:in `controller'
-  actionpack (4.0.2) lib/action_dispatch/routing/route_set.rb:44:in `call'
-  actionpack (4.0.2) lib/action_dispatch/journey/router.rb:71:in `block in call'
-  actionpack (4.0.2) lib/action_dispatch/journey/router.rb:59:in `each'
-  actionpack (4.0.2) lib/action_dispatch/journey/router.rb:59:in `call'
-  actionpack (4.0.2) lib/action_dispatch/routing/route_set.rb:680:in `call'
-  rack (1.5.2) lib/rack/etag.rb:23:in `call'
-  rack (1.5.2) lib/rack/conditionalget.rb:25:in `call'
-  rack (1.5.2) lib/rack/head.rb:11:in `call'
-  actionpack (4.0.2) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
-  actionpack (4.0.2) lib/action_dispatch/middleware/flash.rb:241:in `call'
-  rack (1.5.2) lib/rack/session/abstract/id.rb:225:in `context'
-  rack (1.5.2) lib/rack/session/abstract/id.rb:220:in `call'
-  actionpack (4.0.2) lib/action_dispatch/middleware/cookies.rb:486:in `call'
-  activerecord (4.0.2) lib/active_record/query_cache.rb:36:in `call'
-  activerecord (4.0.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:626:in `call'
-  activerecord (4.0.2) lib/active_record/migration.rb:369:in `call'
-  actionpack (4.0.2) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
-  activesupport (4.0.2) lib/active_support/callbacks.rb:373:in `_run__710314515314212977__call__callbacks'
-  activesupport (4.0.2) lib/active_support/callbacks.rb:80:in `run_callbacks'
-  actionpack (4.0.2) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
-  actionpack (4.0.2) lib/action_dispatch/middleware/reloader.rb:64:in `call'
-  actionpack (4.0.2) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
-  actionpack (4.0.2) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
-  actionpack (4.0.2) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
-  railties (4.0.2) lib/rails/rack/logger.rb:38:in `call_app'
-  railties (4.0.2) lib/rails/rack/logger.rb:20:in `block in call'
-  activesupport (4.0.2) lib/active_support/tagged_logging.rb:67:in `block in tagged'
-  activesupport (4.0.2) lib/active_support/tagged_logging.rb:25:in `tagged'
-  activesupport (4.0.2) lib/active_support/tagged_logging.rb:67:in `tagged'
-  railties (4.0.2) lib/rails/rack/logger.rb:20:in `call'
-  actionpack (4.0.2) lib/action_dispatch/middleware/request_id.rb:21:in `call'
-  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
-  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
-  activesupport (4.0.2) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
-  rack (1.5.2) lib/rack/lock.rb:17:in `call'
-  actionpack (4.0.2) lib/action_dispatch/middleware/static.rb:64:in `call'
-  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
-  railties (4.0.2) lib/rails/engine.rb:511:in `call'
-  railties (4.0.2) lib/rails/application.rb:97:in `call'
-  rack (1.5.2) lib/rack/lock.rb:17:in `call'
-  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
-  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
-  /Users/hyunjinjang/.rvm/rubies/ruby-2.0.0-p353/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
-  /Users/hyunjinjang/.rvm/rubies/ruby-2.0.0-p353/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
-  /Users/hyunjinjang/.rvm/rubies/ruby-2.0.0-p353/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
-
-
-  Rendered /Users/hyunjinjang/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.5ms)
-  Rendered /Users/hyunjinjang/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.8ms)
-  Rendered /Users/hyunjinjang/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.0ms)
-  Rendered /Users/hyunjinjang/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (13.2ms)
-
-
-Started GET "/" for 127.0.0.1 at 2014-01-02 23:59:00 +0900
-
-SyntaxError (/Users/hyunjinjang/Documents/projects/rails/pom/app/controllers/welcome_controller.rb:2: syntax error, unexpected ':', expecting keyword_end
-	before_filter :login_required, :only: :index
-	                                     ^):
-  activesupport (4.0.2) lib/active_support/dependencies.rb:424:in `load'
-  activesupport (4.0.2) lib/active_support/dependencies.rb:424:in `block in load_file'
-  activesupport (4.0.2) lib/active_support/dependencies.rb:616:in `new_constants_in'
-  activesupport (4.0.2) lib/active_support/dependencies.rb:423:in `load_file'
-  activesupport (4.0.2) lib/active_support/dependencies.rb:324:in `require_or_load'
-  activesupport (4.0.2) lib/active_support/dependencies.rb:463:in `load_missing_constant'
-  activesupport (4.0.2) lib/active_support/dependencies.rb:184:in `const_missing'
-  activesupport (4.0.2) lib/active_support/inflector/methods.rb:226:in `const_get'
-  activesupport (4.0.2) lib/active_support/inflector/methods.rb:226:in `block in constantize'
-  activesupport (4.0.2) lib/active_support/inflector/methods.rb:224:in `each'
-  activesupport (4.0.2) lib/active_support/inflector/methods.rb:224:in `inject'
-  activesupport (4.0.2) lib/active_support/inflector/methods.rb:224:in `constantize'
-  activesupport (4.0.2) lib/active_support/dependencies.rb:535:in `get'
-  activesupport (4.0.2) lib/active_support/dependencies.rb:566:in `constantize'
-  actionpack (4.0.2) lib/action_dispatch/routing/route_set.rb:76:in `controller_reference'
-  actionpack (4.0.2) lib/action_dispatch/routing/route_set.rb:66:in `controller'
-  actionpack (4.0.2) lib/action_dispatch/routing/route_set.rb:44:in `call'
-  actionpack (4.0.2) lib/action_dispatch/journey/router.rb:71:in `block in call'
-  actionpack (4.0.2) lib/action_dispatch/journey/router.rb:59:in `each'
-  actionpack (4.0.2) lib/action_dispatch/journey/router.rb:59:in `call'
-  actionpack (4.0.2) lib/action_dispatch/routing/route_set.rb:680:in `call'
-  rack (1.5.2) lib/rack/etag.rb:23:in `call'
-  rack (1.5.2) lib/rack/conditionalget.rb:25:in `call'
-  rack (1.5.2) lib/rack/head.rb:11:in `call'
-  actionpack (4.0.2) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
-  actionpack (4.0.2) lib/action_dispatch/middleware/flash.rb:241:in `call'
-  rack (1.5.2) lib/rack/session/abstract/id.rb:225:in `context'
-  rack (1.5.2) lib/rack/session/abstract/id.rb:220:in `call'
-  actionpack (4.0.2) lib/action_dispatch/middleware/cookies.rb:486:in `call'
-  activerecord (4.0.2) lib/active_record/query_cache.rb:36:in `call'
-  activerecord (4.0.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:626:in `call'
-  activerecord (4.0.2) lib/active_record/migration.rb:369:in `call'
-  actionpack (4.0.2) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
-  activesupport (4.0.2) lib/active_support/callbacks.rb:373:in `_run__710314515314212977__call__callbacks'
-  activesupport (4.0.2) lib/active_support/callbacks.rb:80:in `run_callbacks'
-  actionpack (4.0.2) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
-  actionpack (4.0.2) lib/action_dispatch/middleware/reloader.rb:64:in `call'
-  actionpack (4.0.2) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
-  actionpack (4.0.2) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
-  actionpack (4.0.2) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
-  railties (4.0.2) lib/rails/rack/logger.rb:38:in `call_app'
-  railties (4.0.2) lib/rails/rack/logger.rb:20:in `block in call'
-  activesupport (4.0.2) lib/active_support/tagged_logging.rb:67:in `block in tagged'
-  activesupport (4.0.2) lib/active_support/tagged_logging.rb:25:in `tagged'
-  activesupport (4.0.2) lib/active_support/tagged_logging.rb:67:in `tagged'
-  railties (4.0.2) lib/rails/rack/logger.rb:20:in `call'
-  actionpack (4.0.2) lib/action_dispatch/middleware/request_id.rb:21:in `call'
-  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
-  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
-  activesupport (4.0.2) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
-  rack (1.5.2) lib/rack/lock.rb:17:in `call'
-  actionpack (4.0.2) lib/action_dispatch/middleware/static.rb:64:in `call'
-  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
-  railties (4.0.2) lib/rails/engine.rb:511:in `call'
-  railties (4.0.2) lib/rails/application.rb:97:in `call'
-  rack (1.5.2) lib/rack/lock.rb:17:in `call'
-  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
-  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
-  /Users/hyunjinjang/.rvm/rubies/ruby-2.0.0-p353/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
-  /Users/hyunjinjang/.rvm/rubies/ruby-2.0.0-p353/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
-  /Users/hyunjinjang/.rvm/rubies/ruby-2.0.0-p353/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
-
-
-  Rendered /Users/hyunjinjang/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.5ms)
-  Rendered /Users/hyunjinjang/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.9ms)
-  Rendered /Users/hyunjinjang/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.2ms)
-  Rendered /Users/hyunjinjang/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (13.3ms)
-
-
-Started GET "/" for 127.0.0.1 at 2014-01-02 23:59:06 +0900
-
-SyntaxError (/Users/hyunjinjang/Documents/projects/rails/pom/app/controllers/welcome_controller.rb:2: syntax error, unexpected ':', expecting keyword_end
-	before_filter :login_required, :only :index
-	                                      ^):
-  activesupport (4.0.2) lib/active_support/dependencies.rb:424:in `load'
-  activesupport (4.0.2) lib/active_support/dependencies.rb:424:in `block in load_file'
-  activesupport (4.0.2) lib/active_support/dependencies.rb:616:in `new_constants_in'
-  activesupport (4.0.2) lib/active_support/dependencies.rb:423:in `load_file'
-  activesupport (4.0.2) lib/active_support/dependencies.rb:324:in `require_or_load'
-  activesupport (4.0.2) lib/active_support/dependencies.rb:463:in `load_missing_constant'
-  activesupport (4.0.2) lib/active_support/dependencies.rb:184:in `const_missing'
-  activesupport (4.0.2) lib/active_support/inflector/methods.rb:226:in `const_get'
-  activesupport (4.0.2) lib/active_support/inflector/methods.rb:226:in `block in constantize'
-  activesupport (4.0.2) lib/active_support/inflector/methods.rb:224:in `each'
-  activesupport (4.0.2) lib/active_support/inflector/methods.rb:224:in `inject'
-  activesupport (4.0.2) lib/active_support/inflector/methods.rb:224:in `constantize'
-  activesupport (4.0.2) lib/active_support/dependencies.rb:535:in `get'
-  activesupport (4.0.2) lib/active_support/dependencies.rb:566:in `constantize'
-  actionpack (4.0.2) lib/action_dispatch/routing/route_set.rb:76:in `controller_reference'
-  actionpack (4.0.2) lib/action_dispatch/routing/route_set.rb:66:in `controller'
-  actionpack (4.0.2) lib/action_dispatch/routing/route_set.rb:44:in `call'
-  actionpack (4.0.2) lib/action_dispatch/journey/router.rb:71:in `block in call'
-  actionpack (4.0.2) lib/action_dispatch/journey/router.rb:59:in `each'
-  actionpack (4.0.2) lib/action_dispatch/journey/router.rb:59:in `call'
-  actionpack (4.0.2) lib/action_dispatch/routing/route_set.rb:680:in `call'
-  rack (1.5.2) lib/rack/etag.rb:23:in `call'
-  rack (1.5.2) lib/rack/conditionalget.rb:25:in `call'
-  rack (1.5.2) lib/rack/head.rb:11:in `call'
-  actionpack (4.0.2) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
-  actionpack (4.0.2) lib/action_dispatch/middleware/flash.rb:241:in `call'
-  rack (1.5.2) lib/rack/session/abstract/id.rb:225:in `context'
-  rack (1.5.2) lib/rack/session/abstract/id.rb:220:in `call'
-  actionpack (4.0.2) lib/action_dispatch/middleware/cookies.rb:486:in `call'
-  activerecord (4.0.2) lib/active_record/query_cache.rb:36:in `call'
-  activerecord (4.0.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:626:in `call'
-  activerecord (4.0.2) lib/active_record/migration.rb:369:in `call'
-  actionpack (4.0.2) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
-  activesupport (4.0.2) lib/active_support/callbacks.rb:373:in `_run__710314515314212977__call__callbacks'
-  activesupport (4.0.2) lib/active_support/callbacks.rb:80:in `run_callbacks'
-  actionpack (4.0.2) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
-  actionpack (4.0.2) lib/action_dispatch/middleware/reloader.rb:64:in `call'
-  actionpack (4.0.2) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
-  actionpack (4.0.2) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
-  actionpack (4.0.2) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
-  railties (4.0.2) lib/rails/rack/logger.rb:38:in `call_app'
-  railties (4.0.2) lib/rails/rack/logger.rb:20:in `block in call'
-  activesupport (4.0.2) lib/active_support/tagged_logging.rb:67:in `block in tagged'
-  activesupport (4.0.2) lib/active_support/tagged_logging.rb:25:in `tagged'
-  activesupport (4.0.2) lib/active_support/tagged_logging.rb:67:in `tagged'
-  railties (4.0.2) lib/rails/rack/logger.rb:20:in `call'
-  actionpack (4.0.2) lib/action_dispatch/middleware/request_id.rb:21:in `call'
-  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
-  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
-  activesupport (4.0.2) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
-  rack (1.5.2) lib/rack/lock.rb:17:in `call'
-  actionpack (4.0.2) lib/action_dispatch/middleware/static.rb:64:in `call'
-  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
-  railties (4.0.2) lib/rails/engine.rb:511:in `call'
-  railties (4.0.2) lib/rails/application.rb:97:in `call'
-  rack (1.5.2) lib/rack/lock.rb:17:in `call'
-  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
-  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
-  /Users/hyunjinjang/.rvm/rubies/ruby-2.0.0-p353/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
-  /Users/hyunjinjang/.rvm/rubies/ruby-2.0.0-p353/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
-  /Users/hyunjinjang/.rvm/rubies/ruby-2.0.0-p353/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
-
-
-  Rendered /Users/hyunjinjang/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.5ms)
-  Rendered /Users/hyunjinjang/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.9ms)
-  Rendered /Users/hyunjinjang/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.1ms)
-  Rendered /Users/hyunjinjang/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (16.6ms)
-
-
-Started GET "/" for 127.0.0.1 at 2014-01-02 23:59:06 +0900
-
-SyntaxError (/Users/hyunjinjang/Documents/projects/rails/pom/app/controllers/welcome_controller.rb:2: syntax error, unexpected ':', expecting keyword_end
-	before_filter :login_required, :only :index
-	                                      ^):
-  activesupport (4.0.2) lib/active_support/dependencies.rb:424:in `load'
-  activesupport (4.0.2) lib/active_support/dependencies.rb:424:in `block in load_file'
-  activesupport (4.0.2) lib/active_support/dependencies.rb:616:in `new_constants_in'
-  activesupport (4.0.2) lib/active_support/dependencies.rb:423:in `load_file'
-  activesupport (4.0.2) lib/active_support/dependencies.rb:324:in `require_or_load'
-  activesupport (4.0.2) lib/active_support/dependencies.rb:463:in `load_missing_constant'
-  activesupport (4.0.2) lib/active_support/dependencies.rb:184:in `const_missing'
-  activesupport (4.0.2) lib/active_support/inflector/methods.rb:226:in `const_get'
-  activesupport (4.0.2) lib/active_support/inflector/methods.rb:226:in `block in constantize'
-  activesupport (4.0.2) lib/active_support/inflector/methods.rb:224:in `each'
-  activesupport (4.0.2) lib/active_support/inflector/methods.rb:224:in `inject'
-  activesupport (4.0.2) lib/active_support/inflector/methods.rb:224:in `constantize'
-  activesupport (4.0.2) lib/active_support/dependencies.rb:535:in `get'
-  activesupport (4.0.2) lib/active_support/dependencies.rb:566:in `constantize'
-  actionpack (4.0.2) lib/action_dispatch/routing/route_set.rb:76:in `controller_reference'
-  actionpack (4.0.2) lib/action_dispatch/routing/route_set.rb:66:in `controller'
-  actionpack (4.0.2) lib/action_dispatch/routing/route_set.rb:44:in `call'
-  actionpack (4.0.2) lib/action_dispatch/journey/router.rb:71:in `block in call'
-  actionpack (4.0.2) lib/action_dispatch/journey/router.rb:59:in `each'
-  actionpack (4.0.2) lib/action_dispatch/journey/router.rb:59:in `call'
-  actionpack (4.0.2) lib/action_dispatch/routing/route_set.rb:680:in `call'
-  rack (1.5.2) lib/rack/etag.rb:23:in `call'
-  rack (1.5.2) lib/rack/conditionalget.rb:25:in `call'
-  rack (1.5.2) lib/rack/head.rb:11:in `call'
-  actionpack (4.0.2) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
-  actionpack (4.0.2) lib/action_dispatch/middleware/flash.rb:241:in `call'
-  rack (1.5.2) lib/rack/session/abstract/id.rb:225:in `context'
-  rack (1.5.2) lib/rack/session/abstract/id.rb:220:in `call'
-  actionpack (4.0.2) lib/action_dispatch/middleware/cookies.rb:486:in `call'
-  activerecord (4.0.2) lib/active_record/query_cache.rb:36:in `call'
-  activerecord (4.0.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:626:in `call'
-  activerecord (4.0.2) lib/active_record/migration.rb:369:in `call'
-  actionpack (4.0.2) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
-  activesupport (4.0.2) lib/active_support/callbacks.rb:373:in `_run__710314515314212977__call__callbacks'
-  activesupport (4.0.2) lib/active_support/callbacks.rb:80:in `run_callbacks'
-  actionpack (4.0.2) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
-  actionpack (4.0.2) lib/action_dispatch/middleware/reloader.rb:64:in `call'
-  actionpack (4.0.2) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
-  actionpack (4.0.2) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
-  actionpack (4.0.2) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
-  railties (4.0.2) lib/rails/rack/logger.rb:38:in `call_app'
-  railties (4.0.2) lib/rails/rack/logger.rb:20:in `block in call'
-  activesupport (4.0.2) lib/active_support/tagged_logging.rb:67:in `block in tagged'
-  activesupport (4.0.2) lib/active_support/tagged_logging.rb:25:in `tagged'
-  activesupport (4.0.2) lib/active_support/tagged_logging.rb:67:in `tagged'
-  railties (4.0.2) lib/rails/rack/logger.rb:20:in `call'
-  actionpack (4.0.2) lib/action_dispatch/middleware/request_id.rb:21:in `call'
-  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
-  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
-  activesupport (4.0.2) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
-  rack (1.5.2) lib/rack/lock.rb:17:in `call'
-  actionpack (4.0.2) lib/action_dispatch/middleware/static.rb:64:in `call'
-  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
-  railties (4.0.2) lib/rails/engine.rb:511:in `call'
-  railties (4.0.2) lib/rails/application.rb:97:in `call'
-  rack (1.5.2) lib/rack/lock.rb:17:in `call'
-  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
-  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
-  /Users/hyunjinjang/.rvm/rubies/ruby-2.0.0-p353/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
-  /Users/hyunjinjang/.rvm/rubies/ruby-2.0.0-p353/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
-  /Users/hyunjinjang/.rvm/rubies/ruby-2.0.0-p353/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
-
-
-  Rendered /Users/hyunjinjang/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.6ms)
-  Rendered /Users/hyunjinjang/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.9ms)
-  Rendered /Users/hyunjinjang/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.4ms)
-  Rendered /Users/hyunjinjang/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (14.0ms)
-
-
-Started GET "/" for 127.0.0.1 at 2014-01-02 23:59:11 +0900
+Started GET "/" for 127.0.0.1 at 2014-01-04 02:12:09 +0900
 Processing by WelcomeController#index as HTML
-Completed 500 Internal Server Error in 11ms
-
-ActionView::MissingTemplate (Missing template welcome/login, application/login with {:locale=>[:en], :formats=>[:html, :text, :js, :css, :ics, :csv, :png, :jpeg, :gif, :bmp, :tiff, :mpeg, :xml, :rss, :atom, :yaml, :multipart_form, :url_encoded_form, :json, :pdf, :zip], :handlers=>[:erb, :builder, :raw, :ruby, :jbuilder, :coffee]}. Searched in:
-  * "/Users/hyunjinjang/Documents/projects/rails/pom/app/views"
-  * "/Users/hyunjinjang/.rvm/gems/ruby-2.0.0-p353/gems/twitter-bootstrap-rails-2.2.8/app/views"
-):
-  app/controllers/welcome_controller.rb:9:in `login_required'
+  Rendered welcome/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 28ms (Views: 13.1ms | ActiveRecord: 0.0ms)
 
 
-  Rendered /Users/hyunjinjang/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/missing_template.erb within rescues/layout (0.4ms)
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-01-04 02:12:09 +0900
 
 
-Started GET "/" for 127.0.0.1 at 2014-01-02 23:59:39 +0900
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2014-01-04 02:12:09 +0900
+
+
+Started GET "/" for 127.0.0.1 at 2014-01-04 02:12:10 +0900
 Processing by WelcomeController#index as HTML
-Completed 500 Internal Server Error in 11ms
+  Rendered welcome/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 3ms (Views: 2.1ms | ActiveRecord: 0.0ms)
 
-ActionView::MissingTemplate (Missing template welcome/login, application/login with {:locale=>[:en], :formats=>[:html, :text, :js, :css, :ics, :csv, :png, :jpeg, :gif, :bmp, :tiff, :mpeg, :xml, :rss, :atom, :yaml, :multipart_form, :url_encoded_form, :json, :pdf, :zip], :handlers=>[:erb, :builder, :raw, :ruby, :jbuilder, :coffee]}. Searched in:
-  * "/Users/hyunjinjang/Documents/projects/rails/pom/app/views"
-  * "/Users/hyunjinjang/.rvm/gems/ruby-2.0.0-p353/gems/twitter-bootstrap-rails-2.2.8/app/views"
-):
-  app/controllers/welcome_controller.rb:13:in `login_required'
 
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-01-04 02:12:10 +0900
 
-  Rendered /Users/hyunjinjang/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/missing_template.erb within rescues/layout (0.6ms)
 
-
-Started GET "/" for 127.0.0.1 at 2014-01-02 23:59:39 +0900
-Processing by WelcomeController#index as HTML
-Completed 500 Internal Server Error in 10ms
-
-ActionView::MissingTemplate (Missing template welcome/login, application/login with {:locale=>[:en], :formats=>[:html, :text, :js, :css, :ics, :csv, :png, :jpeg, :gif, :bmp, :tiff, :mpeg, :xml, :rss, :atom, :yaml, :multipart_form, :url_encoded_form, :json, :pdf, :zip], :handlers=>[:erb, :builder, :raw, :ruby, :jbuilder, :coffee]}. Searched in:
-  * "/Users/hyunjinjang/Documents/projects/rails/pom/app/views"
-  * "/Users/hyunjinjang/.rvm/gems/ruby-2.0.0-p353/gems/twitter-bootstrap-rails-2.2.8/app/views"
-):
-  app/controllers/welcome_controller.rb:13:in `login_required'
-
-
-  Rendered /Users/hyunjinjang/.rvm/gems/ruby-2.0.0-p353/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/missing_template.erb within rescues/layout (0.4ms)
-
-
-Started GET "/" for 127.0.0.1 at 2014-01-03 00:01:58 +0900
-Processing by WelcomeController#index as HTML
-  Rendered welcome/login.html.erb within layouts/login (0.3ms)
-Filter chain halted as :login_required rendered or redirected
-Completed 200 OK in 6ms (Views: 5.0ms | ActiveRecord: 0.0ms)
-
-
-Started GET "/" for 127.0.0.1 at 2014-01-03 00:01:59 +0900
-Processing by WelcomeController#index as HTML
-  Rendered welcome/login.html.erb within layouts/login (0.0ms)
-Filter chain halted as :login_required rendered or redirected
-Completed 200 OK in 4ms (Views: 3.2ms | ActiveRecord: 0.0ms)
-
-
-Started GET "/" for 127.0.0.1 at 2014-01-03 00:02:15 +0900
-Processing by WelcomeController#index as HTML
-  Rendered welcome/login.html.erb within layouts/login (0.0ms)
-Filter chain halted as :login_required rendered or redirected
-Completed 200 OK in 4ms (Views: 3.4ms | ActiveRecord: 0.0ms)
-
-
-Started GET "/" for 127.0.0.1 at 2014-01-03 00:02:16 +0900
-Processing by WelcomeController#index as HTML
-  Rendered welcome/login.html.erb within layouts/login (0.0ms)
-Filter chain halted as :login_required rendered or redirected
-Completed 200 OK in 4ms (Views: 3.1ms | ActiveRecord: 0.0ms)
-
-
-Started GET "/" for 127.0.0.1 at 2014-01-03 00:02:21 +0900
-Processing by WelcomeController#index as HTML
-  Rendered welcome/login.html.erb within layouts/login (0.0ms)
-Filter chain halted as :login_required rendered or redirected
-Completed 200 OK in 4ms (Views: 3.4ms | ActiveRecord: 0.0ms)
-
-
-Started GET "/" for 127.0.0.1 at 2014-01-03 00:02:21 +0900
-Processing by WelcomeController#index as HTML
-  Rendered welcome/login.html.erb within layouts/login (0.0ms)
-Filter chain halted as :login_required rendered or redirected
-Completed 200 OK in 4ms (Views: 3.1ms | ActiveRecord: 0.0ms)
-
-
-Started GET "/" for 127.0.0.1 at 2014-01-03 00:03:03 +0900
-Processing by WelcomeController#index as HTML
-  Rendered welcome/login.html.erb within layouts/login (0.0ms)
-Filter chain halted as :login_required rendered or redirected
-Completed 200 OK in 6ms (Views: 5.3ms | ActiveRecord: 0.0ms)
-
-
-Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-01-03 00:03:03 +0900
-
-
-Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2014-01-03 00:03:03 +0900
-
-
-Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-01-03 00:03:03 +0900
-
-
-Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-01-03 00:03:03 +0900
-
-
-Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-01-03 00:03:03 +0900
-
-
-Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-01-03 00:03:03 +0900
-
-
-Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2014-01-03 00:03:03 +0900
-
-
-Started GET "/" for 127.0.0.1 at 2014-01-03 00:03:04 +0900
-Processing by WelcomeController#index as HTML
-  Rendered welcome/login.html.erb within layouts/login (0.0ms)
-Filter chain halted as :login_required rendered or redirected
-Completed 200 OK in 5ms (Views: 4.8ms | ActiveRecord: 0.0ms)
-
-
-Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-01-03 00:03:04 +0900
-
-
-Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2014-01-03 00:03:04 +0900
-
-
-Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-01-03 00:03:04 +0900
-
-
-Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2014-01-03 00:03:04 +0900
-
-
-Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-01-03 00:03:04 +0900
-
-
-Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-01-03 00:03:04 +0900
-
-
-Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-01-03 00:03:04 +0900
-
-
-Started GET "/" for 127.0.0.1 at 2014-01-03 00:03:18 +0900
-Processing by WelcomeController#index as HTML
-  Rendered welcome/login.html.erb within layouts/login (3.2ms)
-Filter chain halted as :login_required rendered or redirected
-Completed 200 OK in 9ms (Views: 8.7ms | ActiveRecord: 0.0ms)
-
-
-Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2014-01-03 00:03:18 +0900
-
-
-Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2014-01-03 00:03:18 +0900
-
-
-Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-01-03 00:03:18 +0900
-
-
-Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-01-03 00:03:18 +0900
-
-
-Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-01-03 00:03:18 +0900
-
-
-Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-01-03 00:03:18 +0900
-
-
-Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-01-03 00:03:18 +0900
-
-
-Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-01-03 00:03:18 +0900
-
-
-Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-01-03 00:03:18 +0900
-
-
-Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-01-03 00:03:18 +0900
-
-
-Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2014-01-03 00:03:18 +0900
-
-
-Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-01-03 00:03:18 +0900
-
-
-Started GET "/" for 127.0.0.1 at 2014-01-03 00:03:19 +0900
-Processing by WelcomeController#index as HTML
-  Rendered welcome/login.html.erb within layouts/login (1.7ms)
-Filter chain halted as :login_required rendered or redirected
-Completed 200 OK in 7ms (Views: 6.3ms | ActiveRecord: 0.0ms)
-
-
-Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2014-01-03 00:03:19 +0900
-
-
-Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-01-03 00:03:19 +0900
-
-
-Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-01-03 00:03:19 +0900
-
-
-Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-01-03 00:03:19 +0900
-
-
-Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-01-03 00:03:19 +0900
-
-
-Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2014-01-03 00:03:19 +0900
-
-
-Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-01-03 00:03:19 +0900
-
-
-Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-01-03 00:03:19 +0900
-
-
-Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-01-03 00:03:20 +0900
-
-
-Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-01-03 00:03:20 +0900
-
-
-Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2014-01-03 00:03:20 +0900
-
-
-Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-01-03 00:03:20 +0900
-
-
-Started GET "/" for 127.0.0.1 at 2014-01-03 00:03:34 +0900
-Processing by WelcomeController#index as HTML
-  Rendered welcome/login.html.erb within layouts/login (3.2ms)
-Filter chain halted as :login_required rendered or redirected
-Completed 200 OK in 9ms (Views: 8.1ms | ActiveRecord: 0.0ms)
-
-
-Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-01-03 00:03:35 +0900
-
-
-Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-01-03 00:03:35 +0900
-
-
-Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2014-01-03 00:03:35 +0900
-
-
-Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-01-03 00:03:35 +0900
-
-
-Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-01-03 00:03:35 +0900
-
-
-Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2014-01-03 00:03:35 +0900
-
-
-Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-01-03 00:03:35 +0900
-
-
-Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-01-03 00:03:35 +0900
-
-
-Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-01-03 00:03:35 +0900
-
-
-Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-01-03 00:03:35 +0900
-
-
-Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2014-01-03 00:03:35 +0900
-
-
-Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-01-03 00:03:35 +0900
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2014-01-04 02:12:10 +0900

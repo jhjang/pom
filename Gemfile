@@ -41,6 +41,7 @@ gem "twitter-bootstrap-rails"
 gem "flat-ui-rails"
 
 # For account(auth + password)
-gem 'devise', github: 'plataformatec/devise'
-gem 'devise-encryptable'
-gem 'scrypt'
+#gem 'devise', github: 'plataformatec/devise'
+#gem 'devise-encryptable'
+#gem 'scrypt'
+gem 'omniauth-facebook'
