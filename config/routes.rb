@@ -1,8 +1,10 @@
 Pom::Application.routes.draw do
-  root "welcome#index"
-  resources 'users'
+  root "comments#index"
   get '/auth/:provider/callback', to: 'users#create' 
   get '/signout', to: 'users#destroy'
+
+  resources 'users'
+  resources 'comments'
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

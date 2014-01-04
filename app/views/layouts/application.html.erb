@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Pom</title>
+    <title>Plus One To Me</title>
     <%= stylesheet_link_tag "application", media: "all", "data-turbolinks-track" => true %>
     <%= csrf_meta_tags %>
     <style>
@@ -16,8 +16,8 @@
       <!-- auth container -->
       <div id="user_nav">
         <% if current_user %>
-          안녕하세요!<strong><%= current_user.name %></strong> 님
-          <%= link_to "로그아웃", signout_path, id: "sign_out" %>
+          안녕하세요! <strong><%= current_user.name %></strong> 님
+          <%= link_to "(로그아웃)", signout_path, id: "sign_out" %>
         <% else %>
           <%= link_to "페이스북으로 로그인", "/auth/facebook", id: "sign_in" %>
         <% end %>
