@@ -22,10 +22,19 @@
           <%= link_to "페이스북으로 로그인", "/auth/facebook", id: "sign_in" %>
         <% end %>
       </div>
+      <hr>
       <!--rails container -->
       <div id="r_container">
         <%= yield %>
       </div>
     </div>
   </body>
+  <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
+  <% if content_for?(:javascript) %>
+    <script type="text/javascript" charset="utf-8">
+      $(function(){
+          <%= yield :javascript %>
+          });
+     </script>
+  <% end %>
 </html>
