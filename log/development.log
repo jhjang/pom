@@ -18936,3 +18936,4 @@ Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2014-01-05 16:27:35 +09
 
 
 Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-01-05 16:27:35 +0900
+  [1m[36mComment Load (1.2ms)[0m  [1mSELECT "comments".* FROM "comments" ORDER BY "comments"."updated_at" ASC[0m
