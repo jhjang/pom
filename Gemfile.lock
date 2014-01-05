@@ -85,6 +85,8 @@ GEM
     less-rails (2.4.2)
       actionpack (>= 3.1)
       less (~> 2.4.0)
+    less-rails-bootstrap (3.0.6)
+      less-rails (~> 2.4.2)
     libv8 (3.16.14.3)
     listen (2.4.0)
       celluloid (>= 0.15.2)
@@ -217,7 +219,7 @@ DEPENDENCIES
   flat-ui-rails
   guard-rspec
   jquery-rails
-  less-rails
+  less-rails-bootstrap
   mysql2
   omniauth-facebook
   rails (= 4.0.2)

@@ -19,7 +19,7 @@ group :doc do
 end
 
 # bootstrap
-gem "less-rails"
+gem "less-rails-bootstrap"
 gem "twitter-bootstrap-rails"
 gem "flat-ui-rails"
 
