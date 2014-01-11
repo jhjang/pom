@@ -1,4 +1,5 @@
 Pom::Application.routes.draw do
+  get "categories/new"
   root "comments#index"
 
   get '/auth/:provider/callback', to: 'users#create' 
@@ -6,4 +7,6 @@ Pom::Application.routes.draw do
 
   resources 'users'
   resources 'comments'
+  resources 'categories', only: [:index, :create] do
+  end
 end
