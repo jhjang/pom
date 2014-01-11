@@ -24,8 +24,13 @@
       </div>
       <hr>
       <!--rails container -->
-      <div id="r_container">
-        <%= yield %>
+      <div class="row">
+        <div id="r_container" class="col-md-8">
+          <%= yield %>
+        </div>
+        <div class="col-md-3">
+          <%= yield(:sidebar) %>
+        </div>
       </div>
     </div>
   </body>
@@ -35,6 +40,6 @@
       $(function(){
           <%= yield :javascript %>
           });
-     </script>
-  <% end %>
+    </script>
+   <% end %>
 </html>

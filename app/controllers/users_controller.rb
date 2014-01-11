@@ -3,7 +3,10 @@ class UsersController < ApplicationController
     user = User.from_omniauth(request.env['omniauth.auth'])
     session[:user_id] = user.id
     redirect_to root_url
-    #render :text => request.env['omniauth_auth'].nil?
+  end
+
+  def index
+    @user = User.all
   end
 
   def destroy

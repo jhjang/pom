@@ -1,0 +1,18 @@
+<div id="user_sidebar_container">
+  <% if @user.nil? %>
+    <% @user = User.all %>
+  <% end %>
+  
+  <h3>구성원</h3> 
+
+  <table class="table table-striped">
+    <tbody>
+      <% @user.each do |u| %>
+        <tr style="text-align:center;">
+          <td> <%= image_tag u.profile_img_url %> </td>
+          <td> <%= u.name %> </td>
+        </tr>
+      <% end %>
+    </tbody>
+  </table>
+</div>
