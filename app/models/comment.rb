@@ -6,7 +6,7 @@ class Comment < ActiveRecord::Base
 
   def self.search(user_id)
     if !user_id.nil?
-    where(:user_id => user_id) 
+    where(:receiver_id => user_id) 
     else
       all
     end

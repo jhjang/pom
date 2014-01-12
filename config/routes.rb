@@ -6,7 +6,11 @@ Pom::Application.routes.draw do
   get '/signout', to: 'users#destroy'
 
   resources 'users'
-  resources 'comments'
+  resources 'comments' do
+    collection do
+      get 'search' => 'comments#search' 
+    end
+  end
   resources 'categories', only: [:index, :create] do
   end
 end

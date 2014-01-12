@@ -27,4 +27,9 @@ class CommentsController < ApplicationController
   def new
     @comment = Comment.new
   end
+
+  def search
+    @comments = Comment.where(:receiver_id => params[:id])
+    render :json => {:result => 0 }
+  end
 end
