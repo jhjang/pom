@@ -8,11 +8,28 @@
   <table class="table table-striped">
     <tbody>
       <% @user.each do |u| %>
-        <tr style="text-align:center;">
+        <tr style="text-align:center;", id=<%= u.id %>>
           <td> <%= image_tag u.profile_img_url %> </td>
           <td> <%= u.name %> </td>
+          <%= hidden_field_tag 'user_id', u.id %>
         </tr>
       <% end %>
     </tbody>
   </table>
 </div>
+
+<% content_for :javascript do %>
+  $("#user_sidebar_container table").delegate('tr', 'click', function() {
+    var value = $(this).attr('id'); 
+    
+    var request = $.ajax({
+                      url: "/comments",
+                      type: "GET",
+                      data: {id : value},
+                      dataType: "html"
+                  });
+    request.done(function(result) {
+      $("#container").html(result);
+    });
+  });
+<% end %>

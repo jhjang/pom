@@ -2,8 +2,10 @@
 <%= form_for(@comment, :html => { :class => 'form-horizontal'})  do |comment| %>
   <%= comment.collection_select :receiver_id, User.all, :id, :name %>
   <%= comment.select :category, options_for_category_select %>
-  <%= comment.text_field :content , :placeholder => "내용" %> 
-  <%= comment.submit "칭찬", :class=>"btn btn-primary" %>
+  <p>
+  <%= comment.text_area :content , :placeholder => "50자 이내로 적어주세요.", :class => "comment_text_area", :maxlength => 50 %> 
+  <%= comment.submit "칭찬하기", :class=>"btn btn-primary comment_add_button" %>
+  <p>
 <% end %>
 
 <!-- add category modal -->
@@ -45,6 +47,7 @@
 
     if (index == last_index){
       // show add category modal
+      $("#name").val('');
       $('#add_modal').modal('show');
     }
   })

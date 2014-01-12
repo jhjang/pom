@@ -18,7 +18,7 @@
           <td><%= comment.receiver.name %></td>
           <td><%= comment.category %></td>
           <td style="max-width:400px;word-wrap:break-word;"><%= comment.content %></td>
-          <td><%= comment.created_at.strftime("%F %T") %></td>
+          <td><%= comment.created_at.strftime("%Y-%m-%d %H:%M") %></td>
         </tr>
       <% end %>
     </tbody>
