@@ -1,18 +1,52 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<meta charset="utf-8" />
-	<title>PLUS ONE TO ME <% yield :title %></title>
-	<%= stylesheet_link_tag "application", media: "all", "data-turbolinks-track" => true %>
-	<style>
-		#container {margin :40px;}
-	</style>
-	<%= csrf_meta_tags %>
-</head>
-<body>
-	<div id = "container">
-		<%= yield %>
-	</div>
-
-</body>
+  <head>
+    <title>Plus One To Me</title>
+    <%= stylesheet_link_tag "application", media: "all", "data-turbolinks-track" => true %>
+    <%= csrf_meta_tags %>
+    <style>
+      #container{
+        margin:40px;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- notice -->
+    <!--  container -->
+    <div id="container">
+      <!-- auth container -->
+      <div id="user_nav">
+        <% if current_user %>
+          안녕하세요! <strong><%= current_user.name %></strong> 님
+          <%= link_to "(로그아웃)", signout_path, id: "sign_out" %>
+        <% else %>
+          <%= link_to "페이스북으로 로그인", "/auth/facebook", id: "sign_in" %>
+        <% end %>
+      </div>
+      <hr>
+      <!--rails container -->
+      <div class="row">
+        <div id="r_container" class="col-md-8">
+          <% if notice %>
+            <div class="alert alert-success">
+              <button type="button" class="close" data-dismiss="alert">&times;</button>
+              <p><%= notice %></p>
+            </div>
+          <% end %>
+          <%= yield %>
+        </div>
+        <div class="col-md-3">
+          <%= yield(:sidebar) %>
+        </div>
+      </div>
+    </div>
+  </body>
+  <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
+  <% if content_for?(:javascript) %>
+    <script type="text/javascript" charset="utf-8">
+      $(function(){
+          <%= yield :javascript %>
+          });
+    </script>
+   <% end %>
 </html>

@@ -1,0 +1,54 @@
+<!-- TODO show select user info --> 
+<%= form_for(@comment, :html => { :class => 'form-horizontal'})  do |comment| %>
+  <%= comment.collection_select :receiver_id, User.all, :id, :name %>
+  <%= comment.select :category, options_for_category_select %>
+  <p>
+  <%= comment.text_area :content , :placeholder => "50자 이내로 적어주세요.", :class => "comment_text_area", :maxlength => 50 %> 
+  <%= comment.submit "칭찬하기", :class=>"btn btn-primary comment_add_button" %>
+  <p>
+<% end %>
+
+<!-- add category modal -->
+<div class="modal fade" id="add_modal" tabindex="-1" role="dialog" aria-labelledby="add_modal_label" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+        <h4 class="modal-title" id="add_moodal_label">카테고리 추가</h4>
+      </div>
+      <div class="modal-body">
+        <%= text_field_tag :name, nil, placeholder: "최대 3글자", maxlength: 3 %> 력
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">취소</button>
+        <button id ="add_category" type="button" class="btn btn-primary">추가</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<% content_for :javascript do %>
+  // for add category option
+  $('#add_category').on("click",function(){
+    // call 'new category' with ajax
+    var name = $("#name").val() + "력";
+    $.post( "/categories", { name: name}, function( data ) {
+      console.log( data ); // John
+    }, "json");
+    // success
+    $('#add_modal').modal('hide');
+  });
+
+  $("#comment_category").change(function(){
+    // check last index
+    var select_options = $("#comment_category option");
+    var index = select_options.index($("#comment_category option:selected")); 
+    var last_index = select_options.index($("#comment_category option:last"));
+
+    if (index == last_index){
+      // show add category modal
+      $("#name").val('');
+      $('#add_modal').modal('show');
+    }
+  })
+<% end %>
